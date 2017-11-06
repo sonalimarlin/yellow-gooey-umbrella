@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+	<head>
+  		<title>JS jQuery HTML Examples</title>
+  		<link rel="stylesheet" type="text/css" href="../mystyle.css">
+  	</head>
+  	<body>
+  		<h1>jQuery and Javascript Code Examples</h1>
+		<h2 id="slider">This is a fleeting h2 header. Click anywhere and it slides away!</h2>
+		<ul class="nav">
+      	<li><a href="../home.html">Home</a></li>
+      	<li><a href="../jsandhtml/examples.html">HTML | JavaScript | jQuery</a></li>
+      	<li><a href="../sql/sqlexamples.html">SQL</a></li>
+      	<li><a href="../css/cssexamples.html">CSS</a></li>
+      	<li><a href="../stories/aboutme.html">About Me</a></li>
+      	<li><a href="../miscellaneous/etc.html">Misc</a></li>
+    	</ul>
+		<div id="content">This page shows some of the jQuery and javascript functionality I've learned.
+		</div>
+		<div class="leftcolumn">
+			<p>
+			<h4 id="personalizedGreeting"></h4>
+			<form id="userName" method="post">
+				First Name: <input type="text" id="firstName"><br>
+				Last Name: <input type="text" id="lastName"><br> 
+			</form>
+			<button id="bgetgreeting">Get greeting</button>    
+			</p>
+		</div>
+		<div class="rightcolumn">
+			<p> <EM>jQuery toggle class invisible:</EM><br>
+			<img id="dramatic" src="../images/loris.jpg" width="150px" height="100px"><br>
+			<button id="toggle_image">Hide Image</button>
+			</p>
+			<p id="loris">
+				Slow lorises are a group of several species of nocturnal strepsirrhine primates that make up the genus Nycticebus. <a href="JavaScript:void(0)"> Click for more</a>
+			</p>
+		</div>
+     	<div class="centercolumn">
+     		<p><EM>A simple onmouseover/onmouseout in html:</EM><br>
+			<img id="img1" src="../images/violin.jpg" height=100px width=200px onmouseover="src='../images/llama.jpg'" onmouseout="src='../images/violin.jpg'"></p>
+			<p><EM>Javascript onclick alert function:</EM><br>
+			<input type="button" id="button1" value="Click For Cheese"></p>
+			<p id="paragraph1"><EM>Javascript link alert message:</EM><br>Hello. Welcome to my Page. Click for a <a href="JavaScript:void(0)" id="link1">welcome message</a>
+			</p>
+			<p><EM>Javascript checks for valid username as specified:</EM>
+			<form id="userNameForm">Please enter your desired username (8-10 characters, at least one number and NO spaces):<br>
+  			<input type="text" id="userName" onFocus="this.style.backgroundColor='yellow';" onBlur="this.style.backgroundColor='white';">
+  			<input type="submit" value="Submit">
+			</form>
+			</p>
+
+			<p id="newWind">
+				Try clicking here to <a href="JavaScript:void(0)">open a new window!</a>
+			</p>
+			<p>
+				<EM>jQuery toggle button opens a new section:</EM><br>
+				<button class="trigger">Open</button>
+				<section class="overlay">
+	  			<button class="trigger">Close</button>
+				</section>
+			</p>
+		</div>
+		<p><a href="../home.html"><img src="../images/home.png" height="30px; width=30px;"></a></p>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="../js/scripts.js"></script>
+</html>
