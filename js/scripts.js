@@ -28,7 +28,7 @@ function newWind() {
 }
 function checkUserName() {
   try {
-    var pass = document.getElementById("userName").value || "";
+    var pass = document.getElementById("userName").value;
     if (pass.indexOf(" ") !== -1) {
       throw "No spaces in username!";
     }
