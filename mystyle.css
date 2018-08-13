@@ -83,7 +83,7 @@ li {
   text-decoration: none;
   font-weight: bold;
   color: #a9a9a9;
-  border-right: 1px solid #ccc; 
+  border-right: 1px solid #ccc;
 }
 
 .nav li a:hover {
@@ -173,4 +173,29 @@ li {
   padding: 15px;
   margin: 10px;
   height: auto;
+}
+*/
+* {
+    box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
